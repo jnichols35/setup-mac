@@ -11,6 +11,9 @@ if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+#add brew tap
+brew tap homebrew/cask-fonts
+
 # Update brew recipes
 brew update
 
@@ -45,8 +48,6 @@ BREW_CASKS=(
 	audacity
     alfred
     discord
-    docker
-    docker-toolbox
     firefox
     font-jetbrains-mono
     github
